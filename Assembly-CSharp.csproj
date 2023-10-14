@@ -756,11 +756,11 @@
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>

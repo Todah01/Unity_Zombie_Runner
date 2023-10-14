@@ -798,8 +798,14 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+        <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+        <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -831,8 +837,14 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+        <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+        <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\wobo5\PersonalProject\Zombie_Runner\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
