@@ -41,12 +41,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+     <Compile Include="Assets\Script\Enemy_Health.cs" />
      <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
      <Compile Include="Assets\Script\Enemy_AI.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+     <Compile Include="Assets\Script\Weapon.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />

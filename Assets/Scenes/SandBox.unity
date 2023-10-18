@@ -710,15 +710,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
+    - target: {fileID: 6139078057342921882, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 910327009643007708, guid: 504e8059921c63f4d81881c80fb672a1, type: 3}
+    - target: {fileID: 6139078057342921882, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 633430163}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+--- !u!198 &633430163 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6643222211084862628, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 633430162}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &698253451
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,7 +2396,7 @@ PrefabInstance:
       objectReference: {fileID: 297117225}
     - target: {fileID: 3828308681610555608, guid: 41f66c32774066c458c7255862982fe5, type: 3}
       propertyPath: chaseRange
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8993313399373710927, guid: 41f66c32774066c458c7255862982fe5, type: 3}
       propertyPath: m_LocalScale.z
