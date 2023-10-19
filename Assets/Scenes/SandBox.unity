@@ -2394,14 +2394,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 297117225}
-    - target: {fileID: 3828308681610555608, guid: 41f66c32774066c458c7255862982fe5, type: 3}
-      propertyPath: chaseRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8993313399373710927, guid: 41f66c32774066c458c7255862982fe5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 8524119209937044943, guid: 41f66c32774066c458c7255862982fe5, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 297117225}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
