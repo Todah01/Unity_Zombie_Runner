@@ -1,0 +1,43 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
+
+public class Weapon_Zoom : MonoBehaviour
+{
+    [SerializeField] Camera mainCamera;
+    [SerializeField] float zoomedOutFOV = 60f;
+    [SerializeField] float zoomedInFOV = 20f;
+    [SerializeField] float zoomedOutSensitivity = 2f;
+    [SerializeField] float zoomedInSensitivity = .5f;
+
+    bool isZoom = false;
+    RigidbodyFirstPersonController RFPcontroller;
+
+    private void Start() {
+        RFPcontroller = this.GetComponent<RigidbodyFirstPersonController>();
+    }
+
+    private void Update() {
+        if(Input.GetMouseButtonDown(1)){
+            Zoom();
+        }
+    }
+
+    private void Zoom()
+    {
+        if(isZoom){
+            isZoom = false;
+            mainCamera.fieldOfView = zoomedOutFOV;
+            RFPcontroller.mouseLook.XSensitivity = zoomedOutSensitivity;
+            RFPcontroller.mouseLook.YSensitivity = zoomedOutSensitivity;
+        }
+        else{
+            isZoom = true;
+            mainCamera.fieldOfView = zoomedInFOV;
+            RFPcontroller.mouseLook.XSensitivity = zoomedInSensitivity;
+            RFPcontroller.mouseLook.YSensitivity = zoomedInSensitivity;
+        }
+    }
+}

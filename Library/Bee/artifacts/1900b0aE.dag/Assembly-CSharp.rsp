@@ -370,6 +370,7 @@
 "Assets/Script/Player_Health.cs"
 "Assets/Script/Scene_Loader.cs"
 "Assets/Script/Weapon.cs"
+"Assets/Script/Weapon_Zoom.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
