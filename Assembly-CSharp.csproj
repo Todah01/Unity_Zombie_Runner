@@ -42,6 +42,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Scene_Loader.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+     <Compile Include="Assets\Script\Weapon_Switcher.cs" />
      <Compile Include="Assets\Script\Death_Handler.cs" />
      <Compile Include="Assets\Script\Enemy_Health.cs" />
      <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
@@ -57,6 +58,7 @@
      <Compile Include="Assets\Script\Player_Health.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
+     <Compile Include="Assets\Script\Ammo.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

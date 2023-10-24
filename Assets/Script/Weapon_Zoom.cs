@@ -11,13 +11,9 @@ public class Weapon_Zoom : MonoBehaviour
     [SerializeField] float zoomedInFOV = 20f;
     [SerializeField] float zoomedOutSensitivity = 2f;
     [SerializeField] float zoomedInSensitivity = .5f;
+    [SerializeField] RigidbodyFirstPersonController RFPcontroller;
 
     bool isZoom = false;
-    RigidbodyFirstPersonController RFPcontroller;
-
-    private void Start() {
-        RFPcontroller = this.GetComponent<RigidbodyFirstPersonController>();
-    }
 
     private void Update() {
         if(Input.GetMouseButtonDown(1)){
