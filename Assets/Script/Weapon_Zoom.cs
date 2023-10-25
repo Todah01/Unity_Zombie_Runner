@@ -14,6 +14,9 @@ public class Weapon_Zoom : MonoBehaviour
     [SerializeField] RigidbodyFirstPersonController RFPcontroller;
 
     bool isZoom = false;
+    private void OnDisable() {
+        ZoomOut();
+    }
 
     private void Update() {
         if(Input.GetMouseButtonDown(1)){
@@ -23,17 +26,27 @@ public class Weapon_Zoom : MonoBehaviour
 
     private void Zoom()
     {
-        if(isZoom){
-            isZoom = false;
-            mainCamera.fieldOfView = zoomedOutFOV;
-            RFPcontroller.mouseLook.XSensitivity = zoomedOutSensitivity;
-            RFPcontroller.mouseLook.YSensitivity = zoomedOutSensitivity;
+        if(isZoom)
+        {
+            ZoomOut();
         }
-        else{
-            isZoom = true;
-            mainCamera.fieldOfView = zoomedInFOV;
-            RFPcontroller.mouseLook.XSensitivity = zoomedInSensitivity;
-            RFPcontroller.mouseLook.YSensitivity = zoomedInSensitivity;
+        else
+        {
+            ZoomIn();
         }
+    }
+    private void ZoomOut()
+    {
+        isZoom = false;
+        mainCamera.fieldOfView = zoomedOutFOV;
+        RFPcontroller.mouseLook.XSensitivity = zoomedOutSensitivity;
+        RFPcontroller.mouseLook.YSensitivity = zoomedOutSensitivity;
+    }
+    private void ZoomIn()
+    {
+        isZoom = true;
+        mainCamera.fieldOfView = zoomedInFOV;
+        RFPcontroller.mouseLook.XSensitivity = zoomedInSensitivity;
+        RFPcontroller.mouseLook.YSensitivity = zoomedInSensitivity;
     }
 }

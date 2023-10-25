@@ -53,7 +53,7 @@ public class Weapon_Switcher : MonoBehaviour
 
     private void ProcessKeyInput()
     {
-        if(Input.GetAxis("Mouse ScrollWheel") > 0){
+        if(Input.GetAxis("Mouse ScrollWheel") < 0){
             if(currentWeapon >= transform.childCount - 1){
                 currentWeapon = 0;
             }
@@ -62,7 +62,7 @@ public class Weapon_Switcher : MonoBehaviour
             }
         }
 
-        if(Input.GetAxis("Mouse ScrollWheel") < 0){
+        if(Input.GetAxis("Mouse ScrollWheel") > 0){
             if(currentWeapon <= 0){
                 currentWeapon = transform.childCount - 1;
             }

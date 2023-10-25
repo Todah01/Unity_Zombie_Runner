@@ -48,9 +48,11 @@
      <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Script\Enemy_Attack.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
+     <Compile Include="Assets\Script\Ammo_PickUp.cs" />
      <Compile Include="Assets\Script\Enemy_AI.cs" />
      <Compile Include="Assets\Script\Weapon_Zoom.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
+     <Compile Include="Assets\Script\Ammo_Type.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
      <Compile Include="Assets\Script\Weapon.cs" />
