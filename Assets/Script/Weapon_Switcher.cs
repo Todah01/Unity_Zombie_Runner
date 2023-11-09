@@ -24,19 +24,19 @@ public class Weapon_Switcher : MonoBehaviour
     private void SetWeaponActive()
     {
         int weaponIdx = 0;
-        foreach(Transform weapon in transform){
+        foreach(GunWeapon weapon in GetComponent<WeaponController>().weapons){
             if(weaponIdx == currentWeapon){
-                weapon.gameObject.SetActive(true);
+                GetComponent<WeaponController>().myWeapon = weapon;
             }
             else{
-                weapon.gameObject.SetActive(false);
+                
             }
             weaponIdx++;
         }
     }
 
     
-    private void ProcessScroolWheel()
+    private void ProcessKeyInput()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1)){
             currentWeapon = 0;
@@ -51,7 +51,7 @@ public class Weapon_Switcher : MonoBehaviour
         }
     }
 
-    private void ProcessKeyInput()
+    private void ProcessScroolWheel()
     {
         if(Input.GetAxis("Mouse ScrollWheel") < 0){
             if(currentWeapon >= transform.childCount - 1){
