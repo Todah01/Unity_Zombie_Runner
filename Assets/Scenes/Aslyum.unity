@@ -5980,6 +5980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2844124276999371048}
   - component: {fileID: 2390254849103314802}
+  - component: {fileID: 7101146538298776299}
   - component: {fileID: 7101146538298776295}
   - component: {fileID: 7101146538298776298}
   - component: {fileID: 7101146538298776297}
@@ -6013,7 +6014,6 @@ MonoBehaviour:
   muzzleFlash: {fileID: 272440311733081807, guid: 9ce2eca4f3ed63c478785a4858dc8a1b, type: 3}
   hitEffect: {fileID: 910327009643007708, guid: 504e8059921c63f4d81881c80fb672a1, type: 3}
   ammoSlot: {fileID: 817699233098934914}
-  ammoType: 0
 --- !u!114 &7101146538298776296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6050,6 +6050,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aa11f0e25cbac49b01f80422b7c164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7101146538298776299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7101146538298776294}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f2099807cc0354c8f97c4fbc9b99e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 6838312202725824244}
+  zoomedOutFOV: 60
+  zoomedInFOV: 20
+  zoomedOutSensitivity: 2
+  zoomedInSensitivity: 0.5
+  RFPcontroller: {fileID: 6838312202714374448}
 --- !u!1001 &7466828703265638190
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public struct Data{
     public float damage;
     public float timeBetweenShots;
     public bool zoom;
+    public AmmoType ammoType;
 }
 
 public abstract class GunWeapon : MonoBehaviour

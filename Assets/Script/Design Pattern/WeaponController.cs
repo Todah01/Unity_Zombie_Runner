@@ -11,7 +11,6 @@ public class WeaponController : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject hitEffect;
     public Ammo ammoSlot;
-    public AmmoType ammoType;
 
     void Start() {
         curWeapon = myWeapon;
@@ -22,6 +21,6 @@ public class WeaponController : MonoBehaviour
             curWeapon = myWeapon;
             myWeapon.InitSetting();
         }
-        myWeapon.Using(ammoSlot, ammoType, muzzleFlash, FPCamera, hitEffect);
+        myWeapon.Using(ammoSlot, myWeapon.data.ammoType, muzzleFlash, FPCamera, hitEffect);
     }
 }
