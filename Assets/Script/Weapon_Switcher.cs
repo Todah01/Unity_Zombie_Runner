@@ -23,16 +23,27 @@ public class Weapon_Switcher : MonoBehaviour
 
     private void SetWeaponActive()
     {
-        int weaponIdx = 0;
-        foreach(GunWeapon weapon in GetComponent<WeaponController>().weapons){
-            if(weaponIdx == currentWeapon){
-                GetComponent<WeaponController>().myWeapon = weapon;
+        GunWeapon[] weapons = GetComponent<WeaponController>().weapons;
+        for(int idx = 0; idx < weapons.Length; idx++){
+            if(idx == currentWeapon){
+                GetComponent<WeaponController>().myWeapon = weapons[idx];
+                transform.GetChild(idx).gameObject.SetActive(true);
             }
             else{
-                
+                transform.GetChild(idx).gameObject.SetActive(false);
             }
-            weaponIdx++;
         }
+        // int weaponIdx = 0;
+        // foreach(GunWeapon weapon in GetComponent<WeaponController>().weapons){
+        //     if(weaponIdx == currentWeapon){
+        //         GetComponent<WeaponController>().myWeapon = weapon;
+
+        //     }
+        //     else{
+                
+        //     }
+        //     weaponIdx++;
+        // }
     }
 
     

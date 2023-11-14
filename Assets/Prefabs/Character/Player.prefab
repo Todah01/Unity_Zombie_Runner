@@ -193,9 +193,10 @@ GameObject:
   - component: {fileID: 6941454013886943980}
   - component: {fileID: 519545043733148958}
   - component: {fileID: 6178830564751522038}
+  - component: {fileID: 4337877874479674239}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +376,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de60fa82ab231bf46959f75032703852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoSlots: []
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 5
+--- !u!114 &4337877874479674239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d799b3d84721ef4f9e6d7e3735354ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactCanvas: {fileID: 0}
+  impactTime: 0.3
 --- !u!1 &4353511413711669394
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +407,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8763665407647361884}
   - component: {fileID: 9209145080795540742}
+  - component: {fileID: 3643931859449405305}
+  - component: {fileID: 5545915959552249596}
+  - component: {fileID: 4584754811832143023}
+  - component: {fileID: 2408991821621538931}
+  - component: {fileID: 6890076346937928006}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -424,6 +450,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWeapon: 0
+--- !u!114 &3643931859449405305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353511413711669394}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f2099807cc0354c8f97c4fbc9b99e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  zoomedOutFOV: 60
+  zoomedInFOV: 20
+  zoomedOutSensitivity: 2
+  zoomedInSensitivity: 0.5
+  RFPcontroller: {fileID: 11400004}
+--- !u!114 &5545915959552249596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353511413711669394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad8005bee2286b40941b94a511ebb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myWeapon: {fileID: 4584754811832143023}
+  weapons:
+  - {fileID: 4584754811832143023}
+  - {fileID: 2408991821621538931}
+  - {fileID: 6890076346937928006}
+  FPCamera: {fileID: 2000000}
+  muzzleFlash: {fileID: 272440311733081807, guid: 9ce2eca4f3ed63c478785a4858dc8a1b, type: 3}
+  hitEffect: {fileID: 910327009643007708, guid: 504e8059921c63f4d81881c80fb672a1, type: 3}
+  ammoSlot: {fileID: 6178830564751522038}
+  ammoText: {fileID: 0}
+--- !u!114 &4584754811832143023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353511413711669394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31aa11f0e25cbac49b01f80422b7c164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2408991821621538931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353511413711669394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3669af999a9944297aac222357ddc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6890076346937928006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4353511413711669394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f0398a3fc8fe54f9255224c39db714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &218907734654693725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,6 +542,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 6178830564751522038}
+    - target: {fileID: 2107218659540262065, guid: c05a7478adac80042a2182086a87af56, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: c05a7478adac80042a2182086a87af56, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -522,6 +628,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 6643222211084862628}
+    - target: {fileID: 2107218659540262065, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: timeBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -577,6 +687,10 @@ PrefabInstance:
     - target: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_Name
       value: Carbine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5796572398911008720, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: mainCamera
@@ -722,6 +836,10 @@ PrefabInstance:
     - target: {fileID: 2337074158997199750, guid: d77f3ddee699fd34fa8d10399c491b2a, type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199750, guid: d77f3ddee699fd34fa8d10399c491b2a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

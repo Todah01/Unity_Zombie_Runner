@@ -377,6 +377,7 @@
 "Assets/Script/Design Pattern/WeaponController.cs"
 "Assets/Script/Design Pattern/WeaponP90.cs"
 "Assets/Script/Design Pattern/WeaponShotgun.cs"
+"Assets/Script/DisplayDamage.cs"
 "Assets/Script/Enemy_AI.cs"
 "Assets/Script/Enemy_Attack.cs"
 "Assets/Script/Enemy_Health.cs"
