@@ -26,6 +26,7 @@ public class WeaponController : MonoBehaviour
             curWeapon = myWeapon;
             myWeapon.InitSetting();
         }
+        WeaponZoomSetting();
         myWeapon.Using(ammoSlot, myWeapon.data.ammoType, muzzleFlash, FPCamera, hitEffect);
     }
 
@@ -33,5 +34,15 @@ public class WeaponController : MonoBehaviour
     {
         int currentAmmo = ammoSlot.GetCurrentAmmo(myWeapon.data.ammoType);
         ammoText.text = currentAmmo.ToString();
+    }
+
+    private void WeaponZoomSetting()
+    {
+        if(myWeapon.data.zoom == true){
+            GetComponent<Weapon_Zoom>().enabled = true;
+        }
+        else{
+            GetComponent<Weapon_Zoom>().enabled = false;
+        }
     }
 }

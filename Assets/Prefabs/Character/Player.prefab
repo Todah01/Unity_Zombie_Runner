@@ -433,8 +433,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3621811173780506088}
-  - {fileID: 7285291884086957482}
   - {fileID: 2551082465526544123}
+  - {fileID: 7285291884086957482}
   m_Father: {fileID: 400000}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &9209145080795540742
@@ -594,6 +594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199750, guid: c05a7478adac80042a2182086a87af56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -690,7 +694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5796572398911008720, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: mainCamera

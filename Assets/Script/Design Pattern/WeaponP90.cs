@@ -10,7 +10,7 @@ public class WeaponP90 : GunWeapon
         data.damage = 15f;
         data.timeBetweenShots = 0.2f;
         data.zoom = false;
-        data.ammoType = AmmoType.Bullets;
+        data.ammoType = AmmoType.Shells;
     }
 
     public override void Using(Ammo ammoSlot, AmmoType ammoType, ParticleSystem muzzleFlash, Camera FPCamera, GameObject hitEffect)

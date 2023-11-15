@@ -10,7 +10,7 @@ public class WeaponCarbine : GunWeapon
         data.damage = 30f;
         data.timeBetweenShots = 0.5f;
         data.zoom = true;
-        data.ammoType = AmmoType.Rockets;
+        data.ammoType = AmmoType.Bullets;
     }
 
     public override void Using(Ammo ammoSlot, AmmoType ammoType, ParticleSystem muzzleFlash, Camera FPCamera, GameObject hitEffect)
