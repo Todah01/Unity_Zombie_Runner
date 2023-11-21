@@ -26,7 +26,7 @@ public class Enemy_AI : MonoBehaviour
             navMeshAgent.enabled = false;
         }
         distanceToTarget = Vector3.Distance(target.position, this.transform.position);
-        if(isProvoked){
+        if(isProvoked && !enemy_health.IsDead()){
             EngageTarget();
         }
         else if(distanceToTarget <= chaseRange){
